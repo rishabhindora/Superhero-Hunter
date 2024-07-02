@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo" onclick="home()"></div>
+            <div class="nav-features">
+                <div class="wishlist" onclick="wishlistNavigation()"><i class="fa-regular fa-heart"></i></div>
+                <div class="search">
+                    <input type="text" placeholder="Search your heroes..."/>
+                    <button onclick="searchHeroesFinder()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <audio id="hoverSound">
+        <source src="audio/click.mp3" type="audio/mp3">
+        <source src="audio/click.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section id="modal-hero" style="display: none;" >
+        <div class="modal-close" onclick="modalClose()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="modal-hero-container">
+            <h2 class="modal-hero-name">Iron Man</h2>
+            <div class="modal-info-wrapper">
+                <div class="modal-hero-img-container">
+                    <div class="modal-hero-img"></div>
+                </div>
+                <div class="modal-hero-information">
+                    <div class="modal-hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit consectetur architecto amet laboriosam quam libero! Odio vel quia sit, nesciunt, aliquam quam maxime, labore laborum non veritatis sapiente facilis?</div>
+                    <div class="modal-hero-appearances">
+                        <div class="modal-hero-comics">Comics: <span class="comic-num">1111</span>
+                        </div>
+                        <div class="modal-hero-series">Series: <span class="series-num">2222</span>
+                        </div>
+                        <div class="modal-hero-stories">Stories: <span class="stories-num">3333</span>
+                        </div>
+                        <div class="modal-hero-events">Events: <span class="events-num">4444</span>
+                        </div>
+                    </div>
+                    <div class="notable-appearances">
+                        <h2>Notable Appearances</h2>
+                        <div class="comic-box">
+                            <h3>Comics</h3>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div class="series">
+                            <h3>Series</h3>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div class="events">
+                            <h3>Events</h3>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </div>    
+        </div>
+        
+    </section>
+
+    <!--Home Superhero  Listings -->
+    <section id="section-home-superheroes" >
+        <div class="container home-superheroes">
+            
+        </div>
+    </section>
+
+    <section  id="section-search-results" style="display: none;">
+        <div class="container search-results">
+            <div class="search-results-header">
+                <h2>Search Result</h2>
+                <div class="home" onclick="home()"><i class="fa-solid fa-house"> </i></div>
+            </div>
+            <div class="search-heroes-container">
+                
+            </div>
+        </div>      
+        </div>   
+    </section>
+
+    <section id="section-hero-profile">
+        
+    </section>
+
+    <section id="section-wishlist" style="display: none;">
+        <div class="container wishlist-container">
+            <div class="wishlist-header">
+                <h2>Wishlist</h2>
+                <div class="home" onclick="home()"><i class="fa-solid fa-house"> </i></div>
+            </div>
+            <div class="wishlist-heroes-container">
+
+            </div>
+        </div>
+    </section>
+    
+    
+    <button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top">&uarr;</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
