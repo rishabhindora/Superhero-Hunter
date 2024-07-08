@@ -1,0 +1,75 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+/* utilities.css */
+
+/* Colors */
+:root {
+    /* Basic Pallett */
+    --primary-color: #f5f5f7;
+    --secondary-color: black;
+    --tertiary-color: #0071e3;
+    --accent-color: #DAA520;
+
+    /* Other Colors */
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    
+  }
+  
+  /* Fonts */
+  :root {
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+  }
+
+  /* Other Values */
+  :root{
+    --spacing-unit:8px;
+    --border-round1:20px;
+  }
+  
+  
+  /* Text Alignment Utilities */
+  .text-left { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+  
+  /* Display Utilities */
+  .d-block { display: block; }
+  .d-inline { display: inline; }
+  .d-inline-block { display: inline-block; }
+  .d-flex{
+    display: flex;
+  }
+  
+  /* Border Utilities */
+  .border { border: 1px solid #000; }
+  .border-rounded { border-radius: 4px; }
+  
+  /* Container */
+  .container {
+    margin: 0 auto;
+    padding: 0px  calc(3*var(--spacing-unit));
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 576px) {
+    .container { max-width: 540px; }
+  }
+  @media (min-width: 768px) {
+    .container { max-width: 720px; }
+  }
+  @media (min-width: 992px) {
+    .container { max-width: 960px; }
+  }
+  @media (min-width: 1200px) {
+    .container { max-width: 1140px; }
+  }
+  
